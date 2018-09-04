@@ -55,12 +55,17 @@ function calculateBonus(employee) {
   return newObject;
 }
 
-function processEmployeeBonuses(){
+//adding bootstrap features
+//put the appended information in div class "card", and styled accordingly
+function processEmployeeBonuses() {
   $('#bonusList').empty();
   for (let i = 0; i < employees.length; i++) {
     let object = calculateBonus(employees[i]);
     console.log(object);
-    $('#bonusList').append('<li>' + object.name + '-- ' + 'Bonus Percentage: ' + object.bonusPercentage + ', Total Compensation: $' + object.totalCompensation + ', Total Bonus: $' + object.totalBonus + '</li>'); 
+    $('#bonusList').append('<div class="col-6">' + '<div class="card">' + '<div class="card-header">'
+      + object.name + '</div>' + '<div class="card-body">' + 'Bonus Percentage: ' + object.bonusPercentage + '<div>'
+      + 'Total Compensation: $' + object.totalCompensation + '</div>' + '</div>' + '<div class="card-footer">'
+      + 'Total Bonus: $' + object.totalBonus + '</div>' + '</div>' + '</div>');
   }
 }
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
@@ -69,7 +74,7 @@ function processEmployeeBonuses(){
 
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
-$(document).ready(function(){
+$(document).ready(function () {
   $('#processBonusesButton').on('click', processEmployeeBonuses)
 });
 

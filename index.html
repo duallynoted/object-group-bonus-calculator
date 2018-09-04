@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>Bonus Calculator Object Challenge</title>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="client.js" charset="utf-8"></script>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Bonus Calculator Object Challenge</title>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="client.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- styling with bootstrap -->
+<body>
+  <div class="container">
     <h1>Bonus Calculator Object Challenge</h1>
-    <button id="processBonusesButton">Process Bonuses</button>
+    <div class="row">
+    <div class="col-8">
+      <p>Finch, Finch, Finch & Radley Esqrs.</p>
+      <p>TKAM, LLC.</p>
+    </div>
+    <div class="col-4" id="secondSide">
+        <p>Working Toward an Equitable Future for All</p>
+        <p><strong>Established 1960</strong></p>
+      </div>
+    </div>
+    <div class="container" id="runDown">
+      <h4>Overview</h4>
+        <p><strong>This year, our firm has seen some difficult cases. While some employees have thrived, some have opportunities for improvement. Several factors have been considered when figuring this year's bonuses.</strong></p>
+      </div>
+    <div class="container">
+      <p>For a detailed view of this year's bonuses, click the button below:</p>
+    </div>
+    <div class="container">
+      <button class="btn-primary" id="processBonusesButton">Process Bonuses</button>
+    </div>
     <div>
-      <h2>Bonuses</h2>
+      <h2>Employee Information</h2>
       <ul id='bonusList'>
       </ul>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

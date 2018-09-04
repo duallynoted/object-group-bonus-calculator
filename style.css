@@ -1,5 +1,44 @@
 body{
-  background-color: antiquewhite;
-  color: #FF4522;
+  background-color: rgb(191, 190, 190);
+  color: rgb(50, 47, 47);
   font-family: superclarendon;
+}
+h1 {
+  color:rgb(160, 156, 160)
+}
+.col-8{
+  background-color: rgb(60, 56, 56);
+  color: rgb(123, 120, 123);
+  text-align: center;
+  font-size: 25px;
+  padding: 38px;
+}
+#secondSide {
+  background-color: rgb(96, 73, 73);
+  color: rgba(126, 126, 17, 0.845);
+  text-align: center;
+  padding: 38px;
+  font-family: cursive;
+  font-size: 25px;
+}
+#processBonusesButton {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+.card-header {
+  background-color: rgba(160, 196, 193, 0.906);
+  text-align: center;
+}
+.card-body {
+  background-color: rgb(60, 56, 56);
+  color: rgb(123, 120, 123);
+}
+.card-footer {
+  background-color: rgb(96, 73, 73);
+  color: rgba(126, 126, 17, 0.845);
+}
+#runDown{
+  margin: 20px;
+  padding: 20px;
+  
 }
